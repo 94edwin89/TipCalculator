@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.css"
 import { useState } from "react";
 
 export default function App() {
@@ -23,7 +23,7 @@ function TipCalculator() {
   }
 
   return (
-    <div>
+    <div className="container">
       <BillInput bill={bill} onSetBill={setBill} />
       <SelectPercentage percentage={percentage1} onSelect={setPercentage1}>
         How did you like the service?
@@ -44,9 +44,9 @@ function TipCalculator() {
 
 function BillInput({ bill, onSetBill }) {
   return (
-    <div>
+    <div className="input-group">
       <label>How much was the bill?</label>
-      <input
+      <input 
         type="text"
         placeholder="Bill value"
         value={bill}
@@ -58,7 +58,7 @@ function BillInput({ bill, onSetBill }) {
 
 function SelectPercentage({ children, percentage, onSelect }) {
   return (
-    <div>
+    <div className="input-group">
       <label>{children}</label>
       <select
         value={percentage}
@@ -75,12 +75,12 @@ function SelectPercentage({ children, percentage, onSelect }) {
 
 function Output({ bill, tip }) {
   return (
-    <h3>
+    <h3 className="output">
       You pay ${bill + tip} (${bill} + ${tip} tip)
     </h3>
   );
 }
 
 function Reset({ onReset }) {
-  return <button onClick={onReset}>Reset</button>;
+  return <button className="reset-button " onClick={onReset}>Reset</button>;
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+font-family: 'Times New Roman', Times, serif;
   }
   
 
@@ -9,7 +9,7 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #f8f4cc;
 }
 
 .input-group {
@@ -34,6 +34,7 @@ body {
 .output {
   margin-top: 20px;
   font-size: 18px;
+  color: #16b5c0;
 }
 
 .reset-button {
@@ -50,5 +51,5 @@ body {
 }
 
 .reset-button:hover {
-  background-color: #0056b3;
+  background-color: #29c016;
 }
